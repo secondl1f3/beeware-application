@@ -1,0 +1,49 @@
+[tool.briefcase]
+project_name = "Question Five"
+bundle = "com.finalexam"
+version = "0.0.1"
+url = "https://finalexam.com/questionfive"
+license = "MIT license"
+author = 'Ahmad Fajar Tatang'
+author_email = "ahmad@finalexam.com"
+
+[tool.briefcase.app.questionfive]
+formal_name = "Question Five"
+description = "This is answer of question five"
+icon = "src/questionfive/resources/questionfive"
+sources = ['src/questionfive']
+requires = []
+
+
+[tool.briefcase.app.questionfive.macOS]
+requires = [
+    'toga-cocoa>=0.3.0.dev20',
+]
+
+[tool.briefcase.app.questionfive.linux]
+requires = [
+    'toga-gtk>=0.3.0.dev20',
+]
+system_requires = [
+    'libgirepository1.0-dev',
+    'libcairo2-dev',
+    'libpango1.0-dev',
+    'libwebkitgtk-3.0-0',
+    'gir1.2-webkit-3.0',
+]
+
+[tool.briefcase.app.questionfive.windows]
+requires = [
+    'toga-winforms>=0.3.0.dev20',
+]
+
+# Mobile deployments
+[tool.briefcase.app.questionfive.iOS]
+requires = [
+    'toga-iOS>=0.3.0.dev20',
+]
+
+[tool.briefcase.app.questionfive.android]
+requires = [
+    'toga-android>=0.3.0.dev20',
+]
